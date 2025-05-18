@@ -1,11 +1,11 @@
 <script>
-	let { children } = $props();
+	let { data, children } = $props();
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
 </script>
 
 <main>
-	<Nav />
+	<Nav title={data.pageTitle}/>
 	<article class="content">
 		{@render children()}
 	</article>
@@ -15,6 +15,7 @@
 <style>
 	* {
 		color: #cad3f5;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	main {
 		background-color: #181926;
