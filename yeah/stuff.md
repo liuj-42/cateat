@@ -7,6 +7,7 @@
 - combine with phrases - "xyz jockey"
 
 ## qbt webui (safe)
+location: cateat-qbt
 - webui for qbt that is purely status
 - probably similar to vuetorrent just rewrite it so theres no way to change the settings
   - or just make it so only some specific things can be changed
