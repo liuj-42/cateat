@@ -7,17 +7,17 @@
 	let pass: string = '';
 </script>
 
-<div class="flex flex-col h-screen items-center justify-center">
+<div class="flex h-screen flex-col items-center justify-center">
 	<div
 		class="mb-6 flex w-[500px] flex-col items-center rounded-md border border-[var(--color-border-card)] p-6"
 	>
-		<h1>log in (qbt webui credentials)</h1>
+		<h1 class="text-lg font-bold">log in (qbt webui credentials)</h1>
 		<Separator.Root
 			class="my-4 shrink-0 bg-border data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[1px]"
 		/>
 
 		<form method="POST" use:enhance class="flex w-full flex-col items-center gap-4">
-			<div class="">
+			<div class="items-left flex w-full max-w-[280px] flex-col gap-1">
 				<label for="username">Username:</label>
 				<input
 					type="text"
@@ -27,8 +27,8 @@
 					class="flex h-input w-full max-w-[280px] flex-col items-center gap-1.5 rounded-input border border-border-input bg-background px-2 py-3 text-sm tracking-[0.01em] text-foreground select-none focus-within:border-border-input-hover focus-within:shadow-date-field-focus hover:border-border-input-hover data-invalid:border-destructive"
 				/>
 			</div>
-			<div class="flex flex-col gap-1">
-				<label for="password">Password:</label>
+			<div class="items-left flex w-full max-w-[280px] flex-col gap-1">
+				<label for="password" class="text-left">Password:</label>
 				<input
 					type="password"
 					id="password"

@@ -46,7 +46,7 @@ export const actions = {
               httpOnly: true,
               sameSite: 'strict',
               secure: process.env.NODE_ENV === 'production',
-              maxAge: 60 * 60 * 24 * 7 // 1 week
+              maxAge: 60 * 60 * 24 // 1 day
             });
             console.log('Login successful, SID cookie set');
             return redirect(303, '/qbt/torrents');
